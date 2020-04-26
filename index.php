@@ -1,10 +1,3 @@
-<html>
-<body>
-<?php 
-
+<?php
  echo 'Hellor world';
-
 ?>
-</body>
-
-</html>
