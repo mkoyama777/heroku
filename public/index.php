@@ -1,3 +1,3 @@
 <?php
- echo 'Hellor world';
+ echo 'm.koyama create new herokuappt';
 ?>
