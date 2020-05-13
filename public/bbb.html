@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        jQuery(function($){
+            $('#video' ).on('timeupdate', function ( event ) {
+                if ( $(this)[0].currentTime >= 30 ) {
+                    $('#opentime').val($(this)[0].currentTime);
+                }
+            });
+            $('#video' ).on('ended', function ( event ) {
+                if ( $(this)[0].currentTime >= 30 ) {
+                    $('#opentime').val('movie end');
+                }
+            });
+
+            
+        });
+        var filename="mov_hts-samp009.mp4";
+        function play(){
+            var video = $('#video').get(0);
+            video.play();
+        }
+        function pause(){
+            var video = $('#video').get(0);
+            video.pause();
+        }
+        function reopen(){
+            var video = $('#video').get(0);
+            var starttime = $('#opentime').val();
+            video.currentTime=starttime;
+            //$('#video').attr("src",filename+"#t="+starttime);
+            video.play();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" name="play" value="再生" onclick="play()"/>
+    <input type="button" name="pause" value="一時停止" onclick="pause()"/>
+    <input type="text" name="opentime" id="opentime" value="20"/>
+    <input type="button" name="reopen"  value="時間指定再開" onclick="reopen()"/>
+    <iframe id="video" src="https://vimeo.com/417892285" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   
+    bbb
+</body>
+</html>
