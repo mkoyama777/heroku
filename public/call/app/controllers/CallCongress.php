@@ -21,7 +21,7 @@ class CallCongress
 
         if ($fromState) {
             $twiml->say(
-                'Thank you for calling congress! It looks like ' .
+                'Osaka2 Thank you for calling congress! It looks like ' .
                 "you're calling from {$fromState}. " .
                 'If this is correct, please press 1. Press 2 if ' .
                 'this is not your current state of residence.'
@@ -33,7 +33,7 @@ class CallCongress
             ]);
         } else {
             $twiml->say(
-                'Thank you for calling Call Congress! If you wish to ' .
+                'Osaka Thank you for calling Call Congress! If you wish to ' .
                 'call your senators, please enter your 5-digit zip code.'
             )->gather([
                 'numDigits' => 5,
