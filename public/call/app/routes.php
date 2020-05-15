@@ -63,7 +63,8 @@ $k->dispatch();
 // Helper functions
 function path($path)
 {
-    return "/callcongress/{$path}";
+   // return "/callcongress/{$path}";
+      reutrn "/call/{$path}";
 }
 
 function base_url($request)
