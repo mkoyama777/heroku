@@ -4,7 +4,7 @@ use Twilio\Rest\Client;
 
 // Your Account SID and Auth Token from twilio.com/console
 $account_sid = 'ACf50e70af7ff62a59e8564078da0cdbdb';
-$auth_token = '7e0a55dc363febce431303fe78ef9c9e';
+$auth_token = '143568de3e1cf152f7d9e150a314e840';
 // In production, these should be environment variables. E.g.:
 // $auth_token = $_ENV["TWILIO_ACCOUNT_SID"]
 
