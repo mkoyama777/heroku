@@ -12,7 +12,8 @@ class CallCongress
     public static function welcome($fromState, $baseUrl)
     {
         $twiml = new Twiml();
-
+1
+error_log("ErrorErrorError------------------\n");
 
         $twiml->say(
             'おまちください',['voice'=>'alice','language'=> 'ja-JP']
