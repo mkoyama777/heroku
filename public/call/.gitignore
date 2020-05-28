@@ -1,0 +1,10 @@
+*.sqlite
+.env
+.php_cs.cache
+composer.lock
+composer.phar
+phpunit.xml
+
+/bin/
+/build/
+/vendor/
